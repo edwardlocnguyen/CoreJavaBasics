@@ -48,16 +48,23 @@ public class JavaBasicsClass {
 		double dbl2 = 2;
 		double result = dbl2 / dbl1;
 		System.out.println("divideTwoDbls: " + result);
-//		how to cast a result to an integer?
+		
+//		cast a result to an integer
+		int result2 = (int)result;
+		System.out.println("divideTwoDbls casted: " + result2);
 	}
 	
 	public void divideTwoIntsCast() {
 		
 		int x = 5;
 		int y = 6;
-		int q = y / x;
+		double q = y / x;
 		System.out.println("divideTwoIntsCast: " + q);
-//		how to cast a y to a double and assign it to q?
+		
+//		cast y to a double and assign it to q
+		double y2 = (double)y;
+		q = y2;
+		System.out.println("divideTwoIntsCast casted: " + q);
 	}
 	
 	public void useConst() {
